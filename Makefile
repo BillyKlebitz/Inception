@@ -1,11 +1,11 @@
 all:
-	docker-compose -f srcs/docker-compose.tml build
-	docker-compose -f srcs/docker-compose.tml up -d 
+	sudo docker-compose -f srcs/docker-compose.yml build
+	sudo docker-compose -f srcs/docker-compose.yml up -d 
 up:
-	docker-compose -f srcs/docker-compose.tml up -d 
+	docker-compose -f srcs/docker-compose.yml up -d 
 build:
-	docker-compose -f srcs/docker-compose.tml build
+	docker-compose -f srcs/docker-compose.yml build
 down:
-	docker-compose -f srcs/docker-compose.tml down
+	docker-compose -f srcs/docker-compose.yml down
 ps:
-	docker-compose -f srcs/docker-compose.tml ps
+	docker-compose -f srcs/docker-compose.yml ps
